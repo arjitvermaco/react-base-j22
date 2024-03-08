@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+//React Component is a function that returns some JSX (HTML)
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+export default function App() {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let myAppName = "Super Calculator!!"
+    let num1 = 2
+    let num2 = 3
+
+    let user = {
+        name: "John",
+        age: 25
+    }
+
+    function returnUserAge(){
+        return user.age
+    }
+
+    return (
+        <>
+            <Header></Header>
+            {num1 + num2}<br/>
+            {user.name}<br/>
+            {user.age > 18 ? "You are an adult" : "You are a kid"} <br/>
+            {returnUserAge()}
+            <Footer/>
+        </>
+
+    )
 }
 
-export default App;
+
+
