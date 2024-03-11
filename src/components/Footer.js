@@ -1,7 +1,13 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer({creator,consoleUserClick,getChildData}) {
+
+  let user = "Arjit Verma";
+
+ 
   return (
-    <div>© Arjit and Team!!</div>
+    <div>© {creator}
+    <button onClick={()=>{getChildData(user)}} >In Footer</button>
+    </div>
   )
 }

@@ -1,8 +1,10 @@
-function Header(){
+function Header(props){
+
+    console.log("Props In Header", props)
     return(
         <header>
-            <h1>Super Calculator</h1>
-            <p>This is a minimal Calculator created using React!!!</p>
+            <h1>{props.myAppName}</h1>
+            <p>{props.description}</p>
         </header>
     )
 }
