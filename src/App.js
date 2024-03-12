@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AdvanceForm from './components/AdvanceForm';
+import BasicInputs from './components/BasicInputs';
+import FormWithValidation from './components/FormWithValidation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-gray-800 min-h-screen text-white flex justify-center items-center'>
+     <AdvanceForm/>
     </div>
   );
 }
