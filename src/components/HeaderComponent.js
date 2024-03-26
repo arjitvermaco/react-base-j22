@@ -29,6 +29,7 @@ export default function HeaderComponent() {
             </Link>
           )
         })}
+        <Link to='/cart' >Cart</Link>
       </div>
     </header>
   )
